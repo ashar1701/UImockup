@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { cn } from "@/lib/utils";
-import { Home, PieChart, CreditCard, Settings, HelpCircle } from 'lucide-react';
+import { Compass, PieChart, CreditCard, Settings, HelpCircle } from 'lucide-react';
 
 interface NavBarProps {
   className?: string;
@@ -9,7 +8,7 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({ className }) => {
   const navItems = [
-    { icon: <Home className="h-5 w-5" />, label: 'Home', active: true },
+    { icon: <Compass className="h-5 w-5" />, label: 'myCompass', active: true },
     { icon: <PieChart className="h-5 w-5" />, label: 'Insights', active: false },
     { icon: <CreditCard className="h-5 w-5" />, label: 'Accounts', active: false },
     { icon: <Settings className="h-5 w-5" />, label: 'Settings', active: false },
