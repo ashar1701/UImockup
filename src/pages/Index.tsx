@@ -4,7 +4,6 @@ import Header from '@/components/Header';
 import NavBar from '@/components/NavBar';
 import FinancialOverview from '@/components/FinancialOverview';
 import ProductRecommendations from '@/components/ProductRecommendations';
-import InvestmentPortfolio from '@/components/InvestmentPortfolio';
 import RiskManagement from '@/components/RiskManagement';
 
 const Index = () => {
@@ -19,9 +18,6 @@ const Index = () => {
           
           {/* Product Recommendations */}
           <ProductRecommendations />
-          
-          {/* Investment Portfolio */}
-          <InvestmentPortfolio />
           
           {/* Standalone Risk Management */}
           <RiskManagement standalone />
