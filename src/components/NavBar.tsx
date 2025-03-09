@@ -17,7 +17,7 @@ const NavBar: React.FC<NavBarProps> = ({ className }) => {
 
   return (
     <div className={cn(
-      "fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 py-2 px-6 z-40 md:hidden",
+      "fixed bottom-0 left-0 right-0 bg-[#43B02A] border-t border-gray-100 py-2 px-6 z-40 md:hidden",
       className
     )}>
       <div className="flex justify-between items-center">
@@ -26,7 +26,7 @@ const NavBar: React.FC<NavBarProps> = ({ className }) => {
             key={index}
             className={cn(
               "flex flex-col items-center gap-1 px-3 py-2 rounded-lg transition-all",
-              item.active ? "text-finance-highlight" : "text-gray-500 hover:text-gray-700"
+              item.active ? "text-white font-semibold" : "text-white/80 hover:text-white"
             )}
           >
             {item.icon}
