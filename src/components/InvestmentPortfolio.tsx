@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from "@/lib/utils";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
@@ -12,10 +11,9 @@ interface InvestmentPortfolioProps {
 const InvestmentPortfolio: React.FC<InvestmentPortfolioProps> = ({ className }) => {
   // Sample investment data - in a real app, this would come from your backend
   const investmentData = [
-    { name: 'Stocks', value: 35, color: '#0EA5E9' },   // Blue
-    { name: 'Bonds', value: 25, color: '#22c55e' },    // Green
-    { name: 'ETFs', value: 20, color: '#f59e0b' },     // Amber
-    { name: 'Crypto', value: 20, color: '#8b5cf6' },   // Purple
+    { name: 'Stocks', value: 45, color: '#0EA5E9' },   // Blue
+    { name: 'Bonds', value: 30, color: '#22c55e' },    // Green
+    { name: 'ETFs', value: 25, color: '#f59e0b' },     // Amber
   ];
 
   // Calculate total investment value and loss percentage
