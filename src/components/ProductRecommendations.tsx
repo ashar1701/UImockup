@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { cn } from "@/lib/utils";
-import { CreditCard, Wallet, BarChart4 } from 'lucide-react';
+import { CreditCard, Wallet } from 'lucide-react';
 
 interface ProductRecommendationsProps {
   className?: string;
@@ -21,12 +21,6 @@ const ProductRecommendations: React.FC<ProductRecommendationsProps> = ({ classNa
       title: "TD Platinum Credit Card",
       description: "Earn rewards on everyday purchases with low annual fees",
       icon: <CreditCard className="h-5 w-5" />,
-    },
-    {
-      id: 3,
-      title: "TD Investment Portfolio",
-      description: "Start investing with personalized portfolio options",
-      icon: <BarChart4 className="h-5 w-5" />,
     }
   ];
 
@@ -40,7 +34,7 @@ const ProductRecommendations: React.FC<ProductRecommendationsProps> = ({ classNa
         <h2 className="text-xl font-medium">You could approach one of our products</h2>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {products.map((product, index) => (
           <div 
             key={product.id}
